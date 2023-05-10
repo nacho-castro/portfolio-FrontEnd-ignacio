@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { Educacion } from 'src/app/model/educacion.model';
 import { AutenticacionService } from 'src/app/services/autenticacion.service';
 import { EducacionService } from 'src/app/services/educacion.service';
 import { IniciarSesionComponent } from '../iniciar-sesion/iniciar-sesion.component';
 
-=======
-import { PortfolioService } from 'src/app/services/portfolio.service';
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
 
 @Component({
   selector: 'app-educacion',
@@ -15,7 +11,6 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit{
-<<<<<<< HEAD
 
   educacion:Educacion[] = [];
   constructor(private educacionService: EducacionService, private iniciarSesion: IniciarSesionComponent, private autenticacion: AutenticacionService){}
@@ -43,18 +38,5 @@ export class EducacionComponent implements OnInit{
         })
 
     }
-=======
-  educacionList:any;
-  constructor(private datosPortfolio:PortfolioService){}
-
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.educacionList=data.education;
-    })
-  }
-
-  edit(){
-    console.log("Edit Educacion!");
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
   }
 }

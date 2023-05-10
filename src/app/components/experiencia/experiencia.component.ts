@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { Experiencia } from 'src/app/model/experiencia.model';
 import { ExperienciaService } from 'src/app/services/experiencia.service';
 import { IniciarSesionComponent } from '../iniciar-sesion/iniciar-sesion.component';
 import { AutenticacionService } from 'src/app/services/autenticacion.service';
-=======
-import { PortfolioService } from 'src/app/services/portfolio.service';
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
 
 @Component({
   selector: 'app-experiencia',
@@ -14,7 +10,6 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
-<<<<<<< HEAD
 
   experiencia: Experiencia[] = [];
 
@@ -44,19 +39,4 @@ export class ExperienciaComponent implements OnInit {
 
     }
   }
-=======
-  experienciaList: any;
-
-  constructor(private datosPortfolio:PortfolioService){}
- 
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.experienciaList=data.experiencie;
-    })
- }
-
- edit(){
-  console.log("Edit Experiencia!");
-}
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
 }

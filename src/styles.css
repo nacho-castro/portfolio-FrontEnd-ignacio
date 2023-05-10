@@ -1,5 +1,4 @@
 * {
-<<<<<<< HEAD
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   list-style: none
@@ -81,43 +80,3 @@ body {
   background: #300061;
   border: #300061;
 }
-=======
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    list-style:none
-  }
-
-  body{
-    background-color: #eed8f8;
-    margin: 0;
-  }
-  
-  .banner {
-    height: 400px;
-    background-image: url(./assets/images/code.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-  }
-  
-  .section {
-    background-color: #fff;
-    padding: 2em;
-    margin-bottom: 20px;
-    border-radius: 18px;
-    width: 100%;
-    height: auto;
-  }
-  
-  #title {
-    text-align: center;
-    padding-bottom: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  .logo-image{
-    height: auto;
-    width: 100%;
-  }
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243

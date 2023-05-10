@@ -1,7 +1,6 @@
 <div class="section">
     <div class="row">
         <h1 id="title">Soft Skills</h1>
-<<<<<<< HEAD
         <div class="col-md-10"></div>
         <div class="col-md-2 mb-3" *ngIf="isLogged">
             <button type="button" class="btn btn-dark" routerLink="/nuevaskill"><i class="bi bi-plus-lg">
@@ -31,17 +30,4 @@
             </div>
         </div>
 
-=======
-        <app-edit-button (click)="edit()"></app-edit-button>
-    </div>
-
-    <div class="skills">
-        <div class="skill" *ngFor="let skills of skillsList">
-            <div class="skill-name">{{skills.name}}</div>
-            <div class="skill-bar">
-                <div class="skill-per" [attr.per]="skills.per" [ngStyle]="{width: skills.per}">
-                </div>
-            </div>
-        </div>
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
     </div>

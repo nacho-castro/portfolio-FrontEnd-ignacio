@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-<<<<<<< HEAD
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { NewPerfilComponent } from './components/perfil/new-perfil.component';
@@ -27,10 +26,6 @@ const routes: Routes = [
   {path: 'nuevoproy', component: NewProyectosComponent},
   {path: 'editproy/:id', component: EditProyectosComponent}
 ];
-=======
-
-const routes: Routes = [];
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

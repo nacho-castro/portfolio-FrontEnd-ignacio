@@ -10,7 +10,6 @@ import { EducacionComponent } from './components/educacion/educacion.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
-<<<<<<< HEAD
 import {HttpClientModule } from '@angular/common/http';
 import { PerfilService } from './services/perfil.service';
 import { LogButtonComponent } from './components/log-button/log-button.component';
@@ -31,12 +30,6 @@ import { EducacionService } from './services/educacion.service';
 import { SkillsService } from './services/skills.service';
 import { ProyectosService } from './services/proyectos.service';
 import { AutenticacionService } from './services/autenticacion.service';
-=======
-import { HttpClientModule } from '@angular/common/http';
-import { PortfolioService } from './services/portfolio.service';
-import { LogButtonComponent } from './components/log-button/log-button.component';
-import { EditButtonComponent } from './components/edit-button/edit-button.component';
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
 
 @NgModule({
   declarations: [
@@ -49,7 +42,6 @@ import { EditButtonComponent } from './components/edit-button/edit-button.compon
     ProyectosComponent,
     FooterComponent,
     LogButtonComponent,
-<<<<<<< HEAD
     IniciarSesionComponent,
     PortfolioComponent,
     NewPerfilComponent,
@@ -61,24 +53,15 @@ import { EditButtonComponent } from './components/edit-button/edit-button.compon
     EditSkillsComponent,
     NewProyectosComponent,
     EditProyectosComponent
-=======
-    EditButtonComponent
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule
   ],
   providers: [PerfilService, ExperienciaService, EducacionService, SkillsService, ProyectosService, AutenticacionService, IniciarSesionComponent],
-=======
-    HttpClientModule
-  ],
-  providers: [PortfolioService],
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
   bootstrap: [AppComponent]
 })
 export class AppModule { }
