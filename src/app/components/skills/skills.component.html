@@ -1,0 +1,47 @@
+<div class="section">
+    <div class="row">
+        <h1 id="title">Soft Skills</h1>
+<<<<<<< HEAD
+        <div class="col-md-10"></div>
+        <div class="col-md-2 mb-3" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaskill"><i class="bi bi-plus-lg">
+                    Nueva</i></button>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="skill" *ngFor="let skill of skills">
+            <div class="skill-name d-flex justify-content-between align-items-center">
+                {{skill.title}}
+                <div class="mb-3" *ngIf="isLogged">
+                    <button type="button" class="btn btn-dark btn-edit" routerLink="/editskill/{{skill.id}}">
+                        <i class="bi bi-pencil-fill"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-danger btn-edit" (click)="borrar(skill.id)">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-per" [attr.per]="skill.per" [ngStyle]="{width: skill.per}">
+                </div>
+            </div>
+        </div>
+
+=======
+        <app-edit-button (click)="edit()"></app-edit-button>
+    </div>
+
+    <div class="skills">
+        <div class="skill" *ngFor="let skills of skillsList">
+            <div class="skill-name">{{skills.name}}</div>
+            <div class="skill-bar">
+                <div class="skill-per" [attr.per]="skills.per" [ngStyle]="{width: skills.per}">
+                </div>
+            </div>
+        </div>
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
+    </div>

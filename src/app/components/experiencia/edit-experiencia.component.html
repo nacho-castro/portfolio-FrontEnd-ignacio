@@ -1,0 +1,21 @@
+<div class="col-sm-12" *ngIf ="exp">
+    <h1 class="m-5">Editar Experiencia</h1>
+            <form (ngSubmit)="onUpdate()" class="m-5" novalidate #f="ngForm">
+                <div class="form-group mb-3">
+                    <label for="title">Título: </label>
+                    <input type="text" class="form-control" id="titulo" name="title" [(ngModel)]="exp.title" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="description">Descripción: </label>
+                    <textarea type="text" class="form-control" id="description" name="description" [(ngModel)]="exp.description"
+                        required></textarea>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="image">Link de imagen: </label>
+                    <input type="text" class="form-control" id="image" name="image" [(ngModel)]="exp.image" required>
+                </div>
+
+                    <button type="submit" class="btn btn-primary">EDITAR</button>                
+            </form>
+</div>

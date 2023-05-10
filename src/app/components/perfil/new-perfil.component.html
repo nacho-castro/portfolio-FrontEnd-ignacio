@@ -1,0 +1,30 @@
+<div class="col-sm-12">
+    <h1 class="m-5">Editar Perfil</h1>
+    <form (ngSubmit)="onUpdate()" class="m-5" novalidate #f="ngForm">
+        <div class="form-group mb-3">
+            <label for="name">Nombre completo: </label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="perfil.name" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="position">Título: </label>
+            <input type="text" class="form-control" id="position" name="position" [(ngModel)]="perfil.position" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="ubication">Ubicación: </label>
+            <input type="text" class="form-control" id="ubication" name="ubication" [(ngModel)]="perfil.ubication" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="profile">Link de foto de perfil: </label>
+            <input type="text" class="form-control" id="profile" name="profile" [(ngModel)]="perfil.profile" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="about">Sobre mí: </label>
+            <textarea type="text" class="form-control" id="about" name="about" [(ngModel)]="perfil.about" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">EDITAR</button>
+    </form>
+</div>

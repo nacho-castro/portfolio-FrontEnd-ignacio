@@ -1,0 +1,123 @@
+* {
+<<<<<<< HEAD
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none
+}
+
+body {
+  background-color: #e9e9e9;
+  margin: 0;
+}
+
+.banner {
+  height: 400px;
+  background-image: url(./assets/images/code.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.section {
+  background-color: #ffffff;
+  padding: 2em;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  width: 100%;
+  height: auto;
+}
+
+#title {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-image {
+  height: auto;
+  width: 100%;
+}
+
+.btn-edit{
+  margin-right: 6px;
+  margin-left: auto;
+  padding: 6px;
+}
+
+
+.btn-primary{
+  color: #ecf2ef;
+  background: #6920b0;
+  border: #6920b0;
+}
+
+.btn-primary:hover{
+  color: #ecf2ef;
+  background: #300061;
+  border: #300061;
+}
+
+.btn-primary:not([disabled]):active {
+  color: #ecf2ef;
+  background: #300061;
+  border: #300061;
+}
+
+.btn-info{
+  color: #ecf2ef;
+  background-color: #4c0b8d;
+  border: #4c0b8d;
+}
+
+.btn-info:hover{
+  color: #ecf2ef;
+  background: #300061;
+  border: #300061;
+}
+
+.btn-info:not([disabled]):active {
+  color: #ecf2ef;
+  background: #300061;
+  border: #300061;
+}
+=======
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style:none
+  }
+
+  body{
+    background-color: #eed8f8;
+    margin: 0;
+  }
+  
+  .banner {
+    height: 400px;
+    background-image: url(./assets/images/code.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  .section {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    width: 100%;
+    height: auto;
+  }
+  
+  #title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .logo-image{
+    height: auto;
+    width: 100%;
+  }
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243

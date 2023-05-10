@@ -1,0 +1,21 @@
+<div class="col-sm-12" *ngIf="skill">
+    <h1 class="m-5">Editar Skill</h1>
+    <form (ngSubmit)="onUpdate()" class="m-5" novalidate #f="ngForm">
+        <div class="form-group mb-3">
+            <label for="title">Título: </label>
+            <input type="text" class="form-control" id="titulo" name="title" [(ngModel)]="skill.title" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="per">Porcentaje: </label>
+            <select class="form-control" id="per" name="per" [(ngModel)]="skill.per" required>
+                <option>10%</option>
+                <option>25%</option>
+                <option>50%</option>
+                <option>75%</option>
+                <option>100%</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">EDITAR</button>
+    </form>
+</div>

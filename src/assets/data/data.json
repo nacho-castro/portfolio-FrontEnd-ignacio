@@ -1,0 +1,88 @@
+{
+    "name": "Ignacio Castro",
+<<<<<<< HEAD
+    "profile": "./assets/images/perfil.png",
+    "position": "Full Stack Developer Jr",
+    "ubication": "Buenos Aires, Argentina",
+    "about": "Hola! Soy Nacho, estudiante de Ingeniería en Sistemas en la Universidad Tecnológica Nacional. Soy una persona organizada y responsable, con buenas relaciones interpersonales. Amante de la tecnología y la programación. Estoy comenzando en el sector IT y busco un puesto desafiante donde pueda continuar aprendiendo. En este Portfolio podrás ver mis proyectos y certificados, además de tener la posibilidad de contactarte conmigo.",
+    "experiencie": [
+        {
+            "title": "FRONT-END",
+            "description": "Desarrollo de sitios web interactivos. Utilizo tecnologías como HTML, CSS, JavaScript, Angular Framework y Bootstrap",
+            "image": "./assets/images/pcicon.png"
+        },
+        {
+            "title": "BACK-END",
+            "description": "Desarrollo de sitios seguros y funcionales. Utilizo Java, Spring Framework, H2 database y MySQL",
+            "image": "./assets/images/bdicon.png"
+=======
+    "backimage": "./assets/images/code.jpg",
+    "image": "./assets/images/perfil.png",
+    "position": "Full Stack Developer Jr",
+    "ubication": "Buenos Aires, Argentina",
+    "about": "Hola! Soy Nacho, futuro estudiante de Ingeniería en Sistemas en la Universidad Tecnológica Nacional. Soy una persona organizada y responsable, con buenas relaciones interpersonales. Amante de la tecnología y la programación. Estoy comenzando en el sector IT y busco un puesto desafiante donde pueda continuar aprendiendo. En este Portfolio podrás ver mis proyectos y certificados, además de tener la posibilidad de contactarte conmigo.",
+    "experiencie": [
+        {
+            "job": "COMPANY",
+            "title": "Puesto",
+            "img": "./assets/images/pcicon.png",
+            "start": "2023",
+            "end": "Actualidad"
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
+        }
+    ],
+    "education": [
+        {
+            "school": "UTN",
+            "title": "Ingenieria en Sistemas de Información",
+<<<<<<< HEAD
+            "image": "./assets/images/utn.jpg",
+=======
+            "img": "./assets/images/utn.jpg",
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
+            "start": "2023",
+            "end": "Actualidad"
+        },
+        {
+            "school": "Nacional de San Isidro",
+            "title": "Bachiller orientado en Cs. Sociales",
+<<<<<<< HEAD
+            "image": "./assets/images/colegionacional.jpg",
+=======
+            "img": "./assets/images/colegionacional.jpg",
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
+            "start": "2017",
+            "end": "2022"
+        }
+    ],
+    "skills": [
+        {
+<<<<<<< HEAD
+            "title": "HTML",
+            "per": "25%"
+        },
+        {
+            "title": "CSS",
+            "per": "25%"
+        },
+        {
+            "title": "JavaScript",
+            "per": "25%"
+        },
+        {
+            "title": "JAVA",
+=======
+            "name": "HTML",
+            "per": "50%"
+        },
+        {
+            "name": "CSS",
+            "per": "50%"
+        },
+        {
+            "name": "JAVASCRIPT",
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
+            "per": "50%"
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+<div class="section" id="about">
+    <div class=row>
+        <div class="col-md-2"></div>
+
+<<<<<<< HEAD
+        <div class="col-md-2">
+            <img [src]="perfil.profile" alt="perfil-logo" id="perfil-logo">
+        </div>
+
+        <div class="col-md-6">
+                <h1>{{perfil.name}}</h1>
+            <p><span>{{perfil.position}}</span></p>
+            <p>📍{{perfil.ubication}}</p>
+            <button type="button" class="btn btn-primary"><a href="mailto:ignaciocastroplanas@gmail.com" id="contacto">Contacto</a></button>
+            <a href="https://drive.google.com/file/d/15ae8ehCIjlVZ0D4e5Rhg7eW7Z0PgLL-X/view?usp=share_link"
+                target="_blank" class="btn btn-info" role="button">Ver CV</a>
+    
+        </div>
+
+        <div class="col-md-2 mb-3" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark" routerLink="/editar-perfil/{{perfil.id}}"><i
+                    class="bi bi-pencil-fill"> Editar</i></button>
+        </div>
+
+    </div>
+
+=======
+        <div class="col-md-2" style="text-align: right;">
+            <img [src]="miPortfolio.image" alt="perfil-logo" id="perfil-logo">
+        </div>
+
+        <div class="col-md-6">
+            <h1>{{miPortfolio.name}}</h1>
+            <app-edit-button
+                (btnClick)="edit()"
+            ></app-edit-button>
+            <p><span>{{miPortfolio.position}}</span></p>
+            <p>📍{{miPortfolio.ubication}}</p>
+            <button type="button" class="btn btn-primary">Contacto</button>
+            <a href="https://drive.google.com/file/d/15ae8ehCIjlVZ0D4e5Rhg7eW7Z0PgLL-X/view?usp=share_link"
+                target="_blank" class="btn btn-info" role="button">Ver CV</a>
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+    
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
+    <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8" style="padding-top: 2em;">
+<<<<<<< HEAD
+            <h2>Sobre mí</h2>
+            <p style="text-align: justify;">{{perfil.about}}</p>
+=======
+            <h2>Acerca de</h2>
+            <p style="text-align: justify;">{{miPortfolio.about}}</p>
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+</div>

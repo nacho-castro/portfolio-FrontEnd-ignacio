@@ -1,0 +1,33 @@
+<div class="col-sm-12" *ngIf ="edu">
+    <h1 class="m-5">Editar Educación</h1>
+            <form (ngSubmit)="onUpdate()" class="m-5" novalidate #f="ngForm">
+
+                <div class="form-group mb-3">
+                    <label for="school">Institución: </label>
+                    <input type="text" class="form-control" id="school" name="school" [(ngModel)]="edu.school"
+                        required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="title">Título: </label>
+                    <input type="text" class="form-control" id="titulo" name="title" [(ngModel)]="edu.title" required>
+                </div>
+        
+                <div class="form-group mb-3">
+                    <label for="image">Link de imagen: </label>
+                    <input type="text" class="form-control" id="image" name="image" [(ngModel)]="edu.image" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="start">Año de comienzo: </label>
+                    <input type="text" class="form-control" id="start" name="start" [(ngModel)]="edu.start" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="end">Año de finalizacion: </label>
+                    <input type="text" class="form-control" id="end" name="end" [(ngModel)]="edu.end" required>
+                </div>
+
+                    <button type="submit" class="btn btn-primary">EDITAR</button>                
+            </form>
+</div>

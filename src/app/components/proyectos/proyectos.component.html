@@ -1,0 +1,74 @@
+<<<<<<< HEAD
+<!-- Minified JS library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="section" id="proyectos">
+    <div class="row">
+        <h1 id="title">Proyectos</h1>
+        <div class="col-md-10"></div>
+        <div class="col-md-2 mb-3" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark" routerLink="/nuevoproy"><i class="bi bi-plus-lg">
+                    Nuevo</i></button>
+        </div>
+    </div>
+
+    <div class="card-deck">
+        <li *ngFor="let proy of proyectos">
+            <div class="card mb-3">
+                <a [href]="proy.link" target="_blank">
+                    <img class="card-img-top" [src]="proy.image" alt="Card image cap">
+                </a>
+
+                <div class="card-body">
+                    <h5 class="card-title">{{proy.title}}</h5>
+                    <p class="card-text"> {{proy.description}}</p>
+                    <div class="card-text">
+
+                        <a class="btn btn-dark m-1" [href]="proy.link" target="_blank" role="button">
+                            <i class="bi bi-send"></i>
+                        </a>
+
+                        <div class="mb-3" *ngIf="isLogged">
+                            <button type="button" class="btn btn-dark btn-edit" routerLink="/editproy/{{proy.id}}">
+                                <i class="bi bi-pencil-fill"> Editar</i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-edit" (click)="borrar(proy.id)">
+                                <i class="bi bi-trash"> Borrar</i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </li>
+
+    </div>
+=======
+<div class="section" id="proyectos">
+    <div class="row">
+        <h1 id="title">Proyectos</h1>
+        <app-edit-button
+            (btnClick)="edit()"
+        ></app-edit-button>
+    </div>
+
+    <div class="container">
+        <div class=row>
+            <div class="col-md-4">
+                <a href="#"><img src="./assets/images/image-here.png" class="img-fluid" alt="image-here"></a>
+                <h2 id="title">Proyecto1</h2>
+            </div>
+            <div class="col-md-4">
+                <a href="#"><img src="./assets/images/image-here.png" class="img-fluid" alt="image-here"></a>
+                <h2 id="title">Proyecto2</h2>
+            </div>
+            <div class="col-md-4">
+                <a href="#"><img src="./assets/images/image-here.png" class="img-fluid" alt="image-here"></a>
+                <h2 id="title">Proyecto3</h2>
+            </div>
+        </div>
+    </div>
+</div>
+>>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243

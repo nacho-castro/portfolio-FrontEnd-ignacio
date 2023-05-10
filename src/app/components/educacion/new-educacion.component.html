@@ -1,0 +1,31 @@
+<div class="col-sm-12">
+    <h1 class="m-5">Agregar Educacion</h1>
+    <form (ngSubmit)="onCreate()" class="m-5" novalidate #f="ngForm">
+        <div class="form-group mb-3">
+            <label for="school">Institución: </label>
+            <input type="text" class="form-control" id="school" name="school" [(ngModel)]="school" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="title">Título: </label>
+            <input type="text" class="form-control" id="titulo" name="title" [(ngModel)]="title" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="image">Link de imagen: </label>
+            <input type="text" class="form-control" id="image" name="image" [(ngModel)]="image" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="start">Año de comienzo: </label>
+            <input type="number" class="form-control" id="start" name="start" [(ngModel)]="start" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="end">Año de finalización: </label>
+            <input type="number" class="form-control" id="end" name="end" [(ngModel)]="end" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">CREAR</button>
+    </form>
+</div>
