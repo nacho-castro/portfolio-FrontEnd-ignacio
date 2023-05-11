@@ -20,29 +20,20 @@
         {
             "school": "UTN",
             "title": "Ingenieria en Sistemas de Información",
-<<<<<<< HEAD
             "image": "./assets/images/utn.jpg",
-=======
-            "img": "./assets/images/utn.jpg",
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
             "start": "2023",
             "end": "Actualidad"
         },
         {
             "school": "Nacional de San Isidro",
             "title": "Bachiller orientado en Cs. Sociales",
-<<<<<<< HEAD
             "image": "./assets/images/colegionacional.jpg",
-=======
-            "img": "./assets/images/colegionacional.jpg",
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
             "start": "2017",
             "end": "2022"
         }
     ],
     "skills": [
         {
-<<<<<<< HEAD
             "title": "HTML",
             "per": "25%"
         },
@@ -56,17 +47,6 @@
         },
         {
             "title": "JAVA",
-=======
-            "name": "HTML",
-            "per": "50%"
-        },
-        {
-            "name": "CSS",
-            "per": "50%"
-        },
-        {
-            "name": "JAVASCRIPT",
->>>>>>> c77fe5a74dabe6a741159d864ba5a04c50694243
             "per": "50%"
         }
     ]
