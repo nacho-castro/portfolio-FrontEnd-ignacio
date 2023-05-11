@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ProyectosService {
 
-  URL = 'http://localhost:8080/proyectos/';
+  URL = 'https://portfolio-backend-q3do.onrender.com/proyectos/';
 
   constructor(private http: HttpClient) { }
 

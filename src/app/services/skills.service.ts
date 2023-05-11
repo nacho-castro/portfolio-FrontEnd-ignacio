@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SkillsService {
 
-  URL = 'http://localhost:8080/skills/';
+  URL = 'https://portfolio-backend-q3do.onrender.com/skills/';
 
   constructor(private http: HttpClient) { }
 

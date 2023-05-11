@@ -8,7 +8,7 @@ import { Perfil } from '../model/perfil.model';
   providedIn: 'root'
 })
 export class PerfilService {
-  URL = 'http://localhost:8080/perfil/';
+  URL = 'https://portfolio-backend-q3do.onrender.com/perfil/';
 
   constructor(private http: HttpClient) { }
 

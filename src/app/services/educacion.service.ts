@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion.model';
 })
 export class EducacionService {
 
-  URL = 'http://localhost:8080/edu/';
+  URL = 'https://portfolio-backend-q3do.onrender.com/edu/';
 
   constructor(private http: HttpClient) { }
 

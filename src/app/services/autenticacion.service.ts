@@ -10,7 +10,7 @@ export class AutenticacionService {
 
   private isLoggedIn = new BehaviorSubject<boolean>(false);
 
-  URL = 'http://localhost:8080/user/';
+  URL = 'https://portfolio-backend-q3do.onrender.com/user/';
 
   constructor(private http:HttpClient) { 
     console.log("El servicio de autenticacion esta corriendo");
