@@ -13,7 +13,8 @@
 
                 <div class="form-group mb-3">
                     <label for="image">Link de imagen: </label>
-                    <input type="text" class="form-control" id="image" name="image" [(ngModel)]="exp.image" required>
+                    <input type="file" class="form-control" id="image" name="image" [(ngModel)]="exp.image" required (change)="uploadImage($event)"
+            accept=".jpg, .jpeg, .png">
                 </div>
 
                     <button type="submit" class="btn btn-primary">EDITAR</button>                

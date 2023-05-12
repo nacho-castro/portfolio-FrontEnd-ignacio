@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion.model';
 import { EducacionService } from 'src/app/services/educacion.service';
+import { ImageService } from 'src/app/services/image.service';
 
 @Component({
   selector: 'app-edit-educacion',
@@ -12,7 +13,7 @@ export class EditEducacionComponent implements OnInit{
 
   edu : Educacion = null;
 
-  constructor(private educacionService: EducacionService, private activatedRoute: ActivatedRoute, private router: Router){
+  constructor(private educacionService: EducacionService, private activatedRoute: ActivatedRoute, private router: Router,  public imageService: ImageService){
     
   }
 
@@ -30,6 +31,7 @@ export class EditEducacionComponent implements OnInit{
 
   onUpdate():void{
     const id = this.activatedRoute.snapshot.params['id'];
+    this.edu.image = this.imageService.url;
     this.educacionService.update(id, this.edu).subscribe(data =>{
       alert("Educacion editada");
       this.router.navigate(['']);
@@ -38,5 +40,11 @@ export class EditEducacionComponent implements OnInit{
       this.router.navigate(['']);
     })
 
+  }
+
+  uploadImage($event: any){
+    const id = this.activatedRoute.snapshot.params['id'];
+    const name = "edu_" + id;
+    this.imageService.uploadImage($event, name);
   }
 }

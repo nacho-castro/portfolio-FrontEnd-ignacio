@@ -7,7 +7,7 @@ export class Perfil{
     ubication: String;
 
     constructor(id: number, name: String, position: String, about: String, profile: String, ubication: String){
-        id = this.id;
+        this.id = id;
         this.name = name;
         this.position = position;
         this.about = about;

@@ -30,6 +30,9 @@ import { EducacionService } from './services/educacion.service';
 import { SkillsService } from './services/skills.service';
 import { ProyectosService } from './services/proyectos.service';
 import { AutenticacionService } from './services/autenticacion.service';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,9 @@ import { AutenticacionService } from './services/autenticacion.service';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [PerfilService, ExperienciaService, EducacionService, SkillsService, ProyectosService, AutenticacionService, IniciarSesionComponent],
   bootstrap: [AppComponent]

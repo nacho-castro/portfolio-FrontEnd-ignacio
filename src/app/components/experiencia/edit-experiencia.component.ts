@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Experiencia } from 'src/app/model/experiencia.model';
 import { ExperienciaService } from 'src/app/services/experiencia.service';
+import { ImageService } from 'src/app/services/image.service';
 
 @Component({
   selector: 'app-edit-experiencia',
@@ -11,7 +12,7 @@ import { ExperienciaService } from 'src/app/services/experiencia.service';
 export class EditExperienciaComponent implements OnInit{
   exp : Experiencia = null;
 
-  constructor(private experienciaService: ExperienciaService, private activatedRoute: ActivatedRoute, private router: Router){
+  constructor(private experienciaService: ExperienciaService, private activatedRoute: ActivatedRoute, private router: Router,  public imageService: ImageService){
 
   }
 
@@ -29,6 +30,7 @@ export class EditExperienciaComponent implements OnInit{
 
   onUpdate():void{
     const id = this.activatedRoute.snapshot.params['id'];
+    this.exp.image = this.imageService.url;
     this.experienciaService.update(id, this.exp).subscribe(data =>{
       alert("Experiencia editada");
       this.router.navigate(['']);
@@ -36,7 +38,12 @@ export class EditExperienciaComponent implements OnInit{
       alert("Error al modificar");
       this.router.navigate(['']);
     })
+  }
 
+  uploadImage($event: any){
+    const id = this.activatedRoute.snapshot.params['id'];
+    const name = "exp_" + id;
+    this.imageService.uploadImage($event, name);
   }
     
 }

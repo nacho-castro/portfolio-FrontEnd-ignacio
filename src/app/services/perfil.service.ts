@@ -2,13 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Perfil } from '../model/perfil.model';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class PerfilService {
-  URL = 'https://portfolio-backend-q3do.onrender.com/perfil/';
+  
+  URL = environment.URL + 'perfil/';
 
   constructor(private http: HttpClient) { }
 
