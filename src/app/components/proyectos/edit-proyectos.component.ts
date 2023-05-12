@@ -12,7 +12,7 @@ import { ProyectosService } from 'src/app/services/proyectos.service';
 export class EditProyectosComponent {
   proy : Proyectos = null;
 
-  constructor(private proyectosService: ProyectosService, private activatedRoute: ActivatedRoute, private router: Router, public imageService: ImageService){
+  constructor(private proyectosService: ProyectosService, private activatedRoute: ActivatedRoute, private router: Router){
     
   }
 
@@ -30,7 +30,6 @@ export class EditProyectosComponent {
 
   onUpdate():void{
     const id = this.activatedRoute.snapshot.params['id'];
-    this.proy.image = this.imageService.url;
     this.proyectosService.update(id, this.proy).subscribe(data =>{
       alert("Proyecto editado");
       this.router.navigate(['']);
@@ -38,11 +37,5 @@ export class EditProyectosComponent {
       alert("Error al modificar");
       this.router.navigate(['']);
     })
-  }
-
-  uploadImage($event: any){
-    const id = this.activatedRoute.snapshot.params['id'];
-    const name = "proy_" + id;
-    this.imageService.uploadImage($event, name);
   }
 }

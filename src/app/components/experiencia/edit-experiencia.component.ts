@@ -12,7 +12,7 @@ import { ImageService } from 'src/app/services/image.service';
 export class EditExperienciaComponent implements OnInit{
   exp : Experiencia = null;
 
-  constructor(private experienciaService: ExperienciaService, private activatedRoute: ActivatedRoute, private router: Router,  public imageService: ImageService){
+  constructor(private experienciaService: ExperienciaService, private activatedRoute: ActivatedRoute, private router: Router){
 
   }
 
@@ -30,7 +30,6 @@ export class EditExperienciaComponent implements OnInit{
 
   onUpdate():void{
     const id = this.activatedRoute.snapshot.params['id'];
-    this.exp.image = this.imageService.url;
     this.experienciaService.update(id, this.exp).subscribe(data =>{
       alert("Experiencia editada");
       this.router.navigate(['']);
@@ -40,10 +39,4 @@ export class EditExperienciaComponent implements OnInit{
     })
   }
 
-  uploadImage($event: any){
-    const id = this.activatedRoute.snapshot.params['id'];
-    const name = "exp_" + id;
-    this.imageService.uploadImage($event, name);
-  }
-    
 }

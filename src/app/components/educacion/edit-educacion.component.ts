@@ -13,7 +13,7 @@ export class EditEducacionComponent implements OnInit{
 
   edu : Educacion = null;
 
-  constructor(private educacionService: EducacionService, private activatedRoute: ActivatedRoute, private router: Router,  public imageService: ImageService){
+  constructor(private educacionService: EducacionService, private activatedRoute: ActivatedRoute, private router: Router){
     
   }
 
@@ -31,7 +31,6 @@ export class EditEducacionComponent implements OnInit{
 
   onUpdate():void{
     const id = this.activatedRoute.snapshot.params['id'];
-    this.edu.image = this.imageService.url;
     this.educacionService.update(id, this.edu).subscribe(data =>{
       alert("Educacion editada");
       this.router.navigate(['']);
@@ -42,9 +41,4 @@ export class EditEducacionComponent implements OnInit{
 
   }
 
-  uploadImage($event: any){
-    const id = this.activatedRoute.snapshot.params['id'];
-    const name = "edu_" + id;
-    this.imageService.uploadImage($event, name);
-  }
 }

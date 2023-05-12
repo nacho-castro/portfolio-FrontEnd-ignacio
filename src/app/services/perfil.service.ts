@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class PerfilService {
   
-  URL = environment.URL + 'perfil/';
+  URL =  environment.URL + 'perfil/';
 
   constructor(private http: HttpClient) { }
 

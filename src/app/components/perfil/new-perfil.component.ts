@@ -12,7 +12,7 @@ import { PerfilService } from 'src/app/services/perfil.service';
 export class NewPerfilComponent implements OnInit {
   perfil: Perfil = null;
 
-  constructor(private perfilService: PerfilService, private activatedRoute: ActivatedRoute,private router: Router, public imageService: ImageService) { }
+  constructor(private perfilService: PerfilService, private activatedRoute: ActivatedRoute,private router: Router) { }
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.params['id'];
@@ -28,7 +28,6 @@ export class NewPerfilComponent implements OnInit {
 
   onUpdate():void{
     const id = this.activatedRoute.snapshot.params['id'];
-    this.perfil.profile = this.imageService.url;
     this.perfilService.update(id, this.perfil).subscribe(data =>{
       alert("Perfil editado");
       this.router.navigate(['']);
@@ -39,9 +38,4 @@ export class NewPerfilComponent implements OnInit {
 
   }
 
-  uploadImage($event: any){
-    const id = this.activatedRoute.snapshot.params['id'];
-    const name = "perfil_" + id;
-    this.imageService.uploadImage($event, name);
-  }
 }
